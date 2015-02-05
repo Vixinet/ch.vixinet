@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vixinet</title>
+    
+    <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1, maximum-scale=1" />
+    
+    <style>
+      html, body {
+	margin : 0px;
+	padding : 0px;
+	background : #666;
+      }
+      
+      * {
+	font-family : Calibri, Helvetica, Arial;
+      }
+      
+      .ui-wrapper {
+	width : 100%;
+	height : 100%;
+	position : absolute;
+      }
+      
+      .ui-wrapper-inner {
+	max-width : 1600px;
+	/* min-width : 1200px; */
+	min-height : 100%;
+	margin : auto;
+	position : relative;
+	background : rgb(241, 241, 241);
+      }
+	
+      .ui-header, .ui-map, .ui-content {
+	position : relative;
+      }
+      
+      .ui-header {
+	height : 100px;
+	background : rgba(0,0,0, 0.50);
+	margin : auto;
+	z-index : 30;
+	text-align : center;
+      }
+      
+      .ui-header img.logo { margin : 10px 10px; }
+      
+      .ui-map {
+	height : 450px;
+	margin-top : -100px;
+	z-index : 20;
+	background : url('res/images/bg-map.png') center center no-repeat;
+      }
+      
+      .ui-content {
+	box-shadow: 0px 10px 10px -10px #AAA inset;
+      }
+      
+      .ui-content-inner {
+	max-width : 1200px;
+	margin : auto;
+      }
+      
+      h1, h2 {
+	line-height : 60px;
+	font-variant: small-caps;
+	font-size : 30px;
+	margin : 0px;
+	margin-left : 70px;
+	margin-bottom : 10px;
+      }
+      
+      h2 {
+	font-size : 20px;
+	line-height : 40px;
+	margin-left : 50px;
+	color : #444;
+      }
+      
+      .column   {
+	float : left;
+	min-height : 230px;
+      }
+      .column-1 { width : 340px; }
+      .column-2 {  }
+      .column-3 { width : 270px; }
+      
+      .column-inner {
+	margin : 20px;
+      }
+      
+      .column p {
+	margin-top : 0px;
+	margin : 10px 0px 0px 70px;
+	font-size : 20px;
+	line-height : 30px;
+	font-style: italic;
+	font-variant: small-caps;
+	
+      }
+      .column-2 p { float : left; }
+      .column-2 p.left { width : 150px; }
+      .column-2 p.right { width : 260px; }
+      
+      .column .ico {
+	float : left;
+	width : 60px;
+	height : 60px;
+	margin-bottom : 10px;
+	border-radius : 10px;
+      }
+      .column-3 .ico {
+	width : 40px;
+	height : 40px;
+      }
+      .ico.calendar { background : url('res/images/calendar.png') center center no-repeat #aa0000; }
+      .ico.home     { background : url('res/images/location.png') center center no-repeat #aa0000; }
+      .ico.phone    { background : url('res/images/phone.png') center center no-repeat #aa0000; }
+      .ico.email    { background : url('res/images/email.png') center center no-repeat #aa0000; }
+      .ico.skype    { background : url('res/images/skype.png') center center no-repeat #aa0000; }
+      .ico.web      { background : url('res/images/web.png') center center no-repeat #aa0000; }
+      
+      
+      
+      .clear {
+	clear : both;	
+	line-height : 1px;
+	margin : 0px;
+	padding : 0px;
+	font-size : 0px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="ui-wrapper">
+      
+      <div class="ui-wrapper-inner">
+	<div class="ui-header">
+	  <div class="logo-bg">
+	    <img src="res/images/logo.png" class="logo" alt="Vixinet" />
+	  </div>
+	</div>
+	<div class="ui-map"> </div>
+	
+	<div class="ui-content">
+	  <div class="ui-content-inner">
+	    <div id="address" class="column column-1">
+	      <div class="column-inner">
+		<div class="ico home"></div>
+		<h1>Vixinet</h1>
+		<p>
+		  Plantassage 4<br/>
+		  CH-3976 Noes<br/>
+		  Switzerland<br/>
+		</p>
+	      </div>
+	    </div>
+	    
+	    <div id="schedule" class="column column-2">
+	      <div class="column-inner">
+		<div class="ico calendar"></div>
+		<h1>Horaires</h1>
+		<p class="left">
+		  Semaine / Week : <br/>
+		  08h - 12h<br/>
+		  13h - 19h<br/>
+		</p>
+		<p class="right">
+		  Samedi / Saturday : <br/>
+		  08h - 12h<br/>
+		  13h - 17h<br/>
+		</p>
+	      </div>
+	    </div>
+	    
+	    <div id="contact" class="column column-3">
+	      <div class="column-inner">
+		<div class="ico phone"></div>
+		<h2>+41 (0)79 311 1856</h2>
+		<div class="ico web"></div>
+		<h2>www.vixinet.ch</h2>
+		<div class="ico email"></div>
+		<h2>costa@vixinet.ch</h2>
+		<div class="ico skype"></div>
+		<h2>vixinet.ch</h2>
+	      </div>
+	    </div>
+	
+	    <div class="clear">&#160;</div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>  
+</html>
