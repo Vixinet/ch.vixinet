@@ -1,1 +1,1 @@
-# ch-vixinet
+# www.vixinet.ch
